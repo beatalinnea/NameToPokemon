@@ -4,13 +4,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="/styles.css" />
   <title>Laboration 1</title>
-  <script type="module" src="./js/index.js"></script>
+  <script type="module" src="/index.js"></script>
 </head>
 
 <body>
-<p>Hello</p>
+  <header>
+    <h1>Hello</h1>
+  </header>
+  <main>
+    <section id="result"></section>
+    <form id="name-form" name="name-form">
+      <fieldset id="name-input">
+          <label for="your-name">Har du glömt bort ditt namn?</label><br>
+          <input type="text" name="your-name" id="your-name" required pattern="[a-zA-Öa-ö]+"><br>
+          <input type="submit" value="Skicka" id="submit-name">
+      </fieldset>
+  </form>
+  </main>
+  <footer></footer>
 </body>
 
 </html>
