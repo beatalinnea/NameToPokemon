@@ -1,6 +1,31 @@
 body {
-	background-color: #cfcfcf;
-	margin: 0px;
+	background-color: #dedede;
+	margin: 20px;
 	padding: 0px;
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+main {
+	padding: 15px;
+	background-color: rgb(192, 192, 192);
+}
+
+form {
+border: solid black 1px;
+background-color: #dedede;
+padding: 7px;
+}
+
+fieldset {
+	border: none;
+}
+
+section {
+	margin-top: 10px;
+}
+
+h1 {
+	font-size: 2.5rem;
 }
