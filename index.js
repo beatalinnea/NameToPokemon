@@ -10,7 +10,7 @@ form.addEventListener('submit', handleSubmit)
 
 function handleSubmit (event) {
     event.preventDefault()
-    const inputElement = form.querySelector('#your-name')
+    const yourName = form.querySelector('#your-name')
 
     const result = document.querySelector('#result')
     if (result.childElementCount > 0) {
@@ -18,13 +18,13 @@ function handleSubmit (event) {
     }
 
     const newP = document.createElement('p')
-    newP.textContent = inputElement.value
+    newP.textContent = yourName.value
     result.appendChild(newP)
-    calcNumber(inputElement.value)
-    inputElement.value = ''
+    convertToNumber(yourName.value)
+    yourName.value = ''
 }
 
-function calcNumber (string) {
+function convertToNumber (string) {
     const nameArray = string.split('')
     const numberArray = []
     const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r' ,'s', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'å', 'ä', 'ö']
@@ -32,4 +32,13 @@ function calcNumber (string) {
         numberArray.push(letters.indexOf(nameArray[i]) + 1)
     }
     console.log(numberArray)
+    sumNumbers(numberArray)
+}
+
+function sumNumbers (array) {
+    let sum = 0
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i]
+    }
+    console.log(sum)
 }
