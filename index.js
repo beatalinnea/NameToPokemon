@@ -66,12 +66,12 @@ async function fetchPokemon(number) {
         const newP = document.createElement('p')
         if (nameOfPokemon.includes('-m')) {
             const editStr = nameOfPokemon.replace('-m', ' ♂')
-            newP.textContent = 'Your pokémon is ' +  editStr
+            newP.textContent = 'Your Pokémon is ' +  editStr
         } else if (nameOfPokemon.includes('-f')) {
             const editStr = nameOfPokemon.replace('-f', ' ♀')
-            newP.textContent = 'Your pokémon is ' +  editStr
+            newP.textContent = 'Your Pokémon is ' +  editStr
         } else {
-            newP.textContent = 'Your pokémon is ' + nameOfPokemon
+            newP.textContent = 'Your Pokémon is ' + nameOfPokemon
         }
         result.appendChild(newP)
         const img = document.createElement('img')

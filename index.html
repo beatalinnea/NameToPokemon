@@ -5,19 +5,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="/styles.css" />
-  <title>Name 2 Number</title>
+  <title>Name to Pokémon converter</title>
   <script type="module" src="/index.js"></script>
 </head>
 
 <body>
   <header>
-    <h1>Name 2 Number</h1>
+    <h1>Name to Pokémon converter</h1>
   </header>
   <main>
     <form id="name-form" name="name-form">
       <fieldset id="name-input">
           <label for="your-name">What is your name?</label><br>
-          <input type="text" name="your-name" id="your-name" required pattern="[a-zA-Öa-ö]+">
+          <input type="text" name="your-name" id="your-name" required pattern="[a-zA-Öa-ö]+" autocomplete="off">
           <input type="submit" value="Submit" id="submit-name">
       </fieldset>
     </form>
