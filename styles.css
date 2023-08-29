@@ -1,15 +1,9 @@
 body {
-	background-color: #dedede;
 	margin: 20px;
 	padding: 0px;
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	text-align: center;
 	font-size: 1.2rem;
-}
-
-main {
-	padding: 15px;
-	background-color: rgb(192, 192, 192);
 }
 
 form {
